@@ -10,9 +10,9 @@ class BuzzerControl(MycroftSkill):
         MycroftSkill.__init__(self)
         
 
-    @intent_handler('led_skill.intent')
+    @intent_handler('buzzer_skill.intent')
     def handle_buzzer_skill(self, message):
-        self.speak_dialog('led_skill')
+        self.speak_dialog('buzzer_skill')
         GPIO.output(20,True)
         GPIO.output(21,True)
 
